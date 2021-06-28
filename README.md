@@ -9,7 +9,7 @@ In order to start, please clone this repository with
 ```shell
 git clone https://github.com/Talentrator/IntelliStor-Vue
 ```
-In github, create a *private* repository. In order to add this to your local git, run
+On Github, create a *private* repository. In order to add this to your local git, run
 ```shell
 git remote add origin https://github.com/<your_github_username>/<your_private_repository_name>
 ```
