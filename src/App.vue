@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import StoreItem from "./components/StoreItem.vue";
 import NavBar from "./components/NavBar.vue";
 
 export default {
@@ -45,10 +44,7 @@ export default {
       },
     ],
   }),
-  components: {
-    StoreItem,
-    NavBar,
-  },
+  components: { NavBar },
 };
 </script>
 
