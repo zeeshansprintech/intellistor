@@ -1,9 +1,52 @@
 <template>
   <div id="app">
     <NavBar />
-    <b-container class="mt-5">
-      <h1>Our Products:</h1>
+    <div style="background-color: #2c3e50"  class="h-100">
+    <b-container>
+      <h1 style="color: white" class="pt-5 pb-5">Our Products</h1>
     </b-container>
+    <b-container>
+      <b-row>
+        <div v-for="(item) in items" :key="item.id">
+          <b-col>
+
+              <b-card
+                  :title="item.name"
+                  :img-src="item.pictureLink"
+                  img-alt="Image"
+                  img-top
+                  img-height="250"
+                  img-width="350"
+                  tag="article"
+                  style="max-width: 350px; background-color: #1a252f; color: white; height: 450px"
+                  class="mb-2"
+              >
+                <b-card-text>
+                  <div >
+                    <div style="height: 100px">
+                  {{ item.explanation }}
+                    </div>
+                    <b-row style="position: relative; bottom: 0px">
+                      <b-col>
+                    <h6 style="">Rating {{ item.starRating}}  <b-icon icon="star-fill" variant="light" font-scale="1"></b-icon></h6>
+                      </b-col>
+                    <b-col>
+                      <h6 style="">Price: £ {{ item.price}} </h6>
+                    </b-col>
+                    </b-row>
+                  </div>
+                </b-card-text>
+
+              </b-card>
+          </b-col>
+        </div>
+      </b-row>
+
+    </b-container>
+      <b-container>
+        <h1 style="color: white" class="pt-5 pb-5"></h1>
+      </b-container>
+    </div>
   </div>
 </template>
 

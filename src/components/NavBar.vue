@@ -1,6 +1,6 @@
 <template>
-  <b-navbar type="dark" variant="primary">
-    <b-navbar-brand> <b> INTELLISTOR </b> </b-navbar-brand>
+  <b-navbar type="light" variant="light">
+    <b-navbar-brand> <b style="color: #2c3e50"> INTELLISTOR </b> </b-navbar-brand>
   </b-navbar>
 </template>
 
